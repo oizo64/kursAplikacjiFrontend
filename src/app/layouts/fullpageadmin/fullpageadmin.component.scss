@@ -1,0 +1,17 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.content{
+    background: #999;
+    padding: 20px;
+}
+header{
+    background: rgb(221, 221, 221);
+    padding: 20px;
+}
+.sidebar{
+    background: rgb(190, 6, 6);
+    padding: 20px; 
+}
