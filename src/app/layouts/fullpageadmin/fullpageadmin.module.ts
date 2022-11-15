@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
+import { NgModule, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FullpageadminComponent } from './fullpageadmin.component';
 import { AdminComponent } from 'src/app/modules/admin/admin.component';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
-
+import { MatIconModule } from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   imports: [
     CommonModule,
     RouterModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatIconModule,
+    MatListModule
   ]
 })
-export class FullpageadminModule { }
+export class FullpageadminModule { 
+  
+}
