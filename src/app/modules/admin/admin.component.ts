@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { PageEvent } from '@angular/material/paginator';
+import { Page } from 'src/app/shared/model/page';
+import { AdminProductService } from './admin-product/admin-product.service';
+import { AdminProduct } from './admin-product/adminProduct';
 
 @Component({
   selector: 'app-admin',

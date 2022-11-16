@@ -5,19 +5,23 @@ import { AdminComponent } from 'src/app/modules/admin/admin.component';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
-import {MatListModule} from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
+import { AdminProductComponent } from 'src/app/modules/admin/admin-product/admin-product.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
     FullpageadminComponent,
-    AdminComponent
+    AdminComponent,
+    AdminProductComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     FlexLayoutModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    SharedModule
   ]
 })
 export class FullpageadminModule { 
