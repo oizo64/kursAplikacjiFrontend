@@ -8,12 +8,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { AdminProductComponent } from 'src/app/modules/admin/admin-product/admin-product.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { AdminProductUpdateComponent } from 'src/app/modules/admin/admin-product-update/admin-product-update.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     FullpageadminComponent,
     AdminComponent,
-    AdminProductComponent
+    AdminProductComponent,
+    AdminProductUpdateComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +24,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     FlexLayoutModule,
     MatIconModule,
     MatListModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ]
 })
 export class FullpageadminModule { 
