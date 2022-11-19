@@ -14,21 +14,21 @@ export class ProductComponent implements OnInit {
 
   page!: Page<Product>;
 
-  constructor(private productService :ProductService) { }
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
     this.getProducts();
   }
- getProducts(){
-  this.getProductPage(0, 10);
- }
+  getProducts() {
+    this.getProductPage(0, 10);
+  }
 
- onPageEvent(event: PageEvent){
-  this.getProductPage(event.pageIndex, event.pageSize);
- }
+  onPageEvent(event: PageEvent) {
+    this.getProductPage(event.pageIndex, event.pageSize);
+  }
 
- private getProductPage(page: number, size: number) {
-  this.productService.getProducts(page, size)
-    .subscribe(page => this.page = page);
-}
+  private getProductPage(page: number, size: number) {
+    this.productService.getProducts(page, size)
+      .subscribe(page => this.page = page);
+  }
 }

@@ -11,12 +11,12 @@ export class AdminProductUpdateService {
 
   constructor(private http: HttpClient) { }
 
-  getProduct(id: number): Observable<AdminProductUpdate>{
+  getProduct(id: number): Observable<AdminProductUpdate> {
     return this.http.get<AdminProductUpdate>("/api/admin/products/" + id);
   }
 
   saveProduct(id: number, valid: AdminProductUpdate) {
-   return this.http.put<AdminProductUpdate>('/api/admin/products/' + id, valid)
+    return this.http.put<AdminProductUpdate>('/api/admin/products/' + id, valid)
   }
 
 }

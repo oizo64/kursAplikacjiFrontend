@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-  categories = ['Kat1','Kat2','Kat3','Kat4','Kat5']
+  categories = ['Kat1', 'Kat2', 'Kat3', 'Kat4', 'Kat5']
 
   constructor() { }
 

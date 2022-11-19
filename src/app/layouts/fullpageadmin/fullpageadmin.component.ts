@@ -9,7 +9,7 @@ export class FullpageadminComponent implements OnInit {
 
   constructor() { }
 
-  categories = ['Kat1','Kat2','Kat3','Kat4','Kat5']
+  categories = ['Kat1', 'Kat2', 'Kat3', 'Kat4', 'Kat5']
   title: any = "Shop";
   ngOnInit(): void {
   }

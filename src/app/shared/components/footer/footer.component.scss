@@ -1,12 +1,15 @@
 @import'../../../../varible.scss';
-:host{
+
+:host {
     background: $darkgray;
     padding: 20px;
     color: #aaa;
 }
+
 .footerCopy {
     text-align: center;
 }
-.footerManu{
+
+.footerManu {
     margin-bottom: 15px;
 }

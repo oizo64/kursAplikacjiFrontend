@@ -1,12 +1,16 @@
 @import'../../../../varible.scss';
-:host{
+
+:host {
     background: $darkgray;
     padding: 20px;
 }
-.logo{
+
+.logo {
     font-size: 22px;
     color: white;
 }
-.logoIcon, .shoppingBasket{
-    font-size: 30px;  
+
+.logoIcon,
+.shoppingBasket {
+    font-size: 30px;
 }

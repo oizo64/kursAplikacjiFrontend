@@ -11,8 +11,8 @@ import { AdminProduct } from './adminProduct';
 })
 export class AdminProductComponent implements AfterViewInit {
   // dataSource: AdminProduct[] = [];
-  @ViewChild(MatPaginator) paginator!:MatPaginator;
-  displayedColumns: string[] = ["id","name","price", "actions"];
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
+  displayedColumns: string[] = ["id", "name", "price", "actions"];
   totalElements: number = 0;
   dataSource: AdminProduct[] = []
   constructor(private adminProductService: AdminProductService) { }
@@ -21,7 +21,7 @@ export class AdminProductComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     this.paginator.page.pipe(
       startWith({}),
-      switchMap(() =>{
+      switchMap(() => {
         return this.adminProductService.getProducts(this.paginator.pageIndex, this.paginator.pageSize)
       }),
     ).subscribe(data => {

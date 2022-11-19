@@ -9,7 +9,7 @@ import { AdminProductUpdate } from '../admin-product-update/model/adminProductUp
 export class AdminProductAddService {
 
   constructor(private http: HttpClient) { }
-  saveNewProduct(product: AdminProductUpdate):Observable<AdminProductUpdate>{
+  saveNewProduct(product: AdminProductUpdate): Observable<AdminProductUpdate> {
     return this.http.post<AdminProductUpdate>("/api/admin/products", product)
   }
 }

@@ -1,4 +1,4 @@
-export interface AdminProduct{
+export interface AdminProduct {
     id: number,
     name: string,
     price: number,
